@@ -93,6 +93,7 @@ img {
     font-family: "RocknRoll One", sans-serif;
     font-weight: 500;
     font-style: normal;
+    
 }
 
 .toggle-menu-button {
@@ -158,8 +159,8 @@ img {
         right: 0;
         color: #ffffff;
         background-color: #736e62;
-        padding-top: 30px;
-        padding-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 35px;
         display: none;
     }
 
@@ -196,7 +197,7 @@ img {
 
 .footer {
     color: #ffffff;
-    background-color: #24211b;
+    background-color: #8beebe;
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
@@ -204,14 +205,22 @@ img {
     align-items: center;
 }
 
-.footer-logo {
-    display: block;
-    width: 235px;
-    margin-top: 90px;
+.footer-site-menu {
+    display: flex;
+    color: #000000;
+    line-height: 2.0;
+    -webkit-text-stroke: 1px #ffffff;
+    font-family: "RocknRoll One", sans-serif;
+    text-shadow:
+        1px 1px 1px #000, -1px -1px 1px #000,
+        -1px 1px 1px #000,  1px -1px 1px #000;
+    font-size: 25px;
+    font-weight: 20;
+    font-style: normal;
 }
 
 .copyright {
     font-size: 14pt;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 50px;
 }
