@@ -74,9 +74,14 @@ img {
     max-width: 100%;
 }
 
+.header {
+    width: 100%;
+    position: fixed;
+}
+
 .header-inner {
-    max-width: 1200px;
-    height: 110px;
+    max-width: 1920;
+    height: 128px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
@@ -84,6 +89,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #dcffee;
 }
 
 .toggle-menu-button {
