@@ -9,7 +9,9 @@ nav.floating {
 
 .first-view {
     height: calc(100vh + 400px);
-    background-image: url(../images/index/bg_main.jpg);
+    background-image: url(../images/index/bg_main.png);
+    max-width: 100%;
+    height: auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -22,8 +24,9 @@ nav.floating {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-bottom: 80px;
+    margin-top: 140px;
+    padding-bottom: 450px;
+    text-align: center;
     color: #ffffff;
     font-weight: bold;
     text-shadow: 1px 1px 10px #4b2c14;
@@ -81,7 +84,7 @@ img {
 
 .header-inner {
     max-width: 1920;
-    height: 128px;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
@@ -102,7 +105,7 @@ img {
 
 .header-logo {
     display: block;
-    width: 170px;
+    width: 120px;
 }
 
 .site-menu ul {
@@ -196,8 +199,9 @@ img {
 }
 
 .footer {
-    color: #ffffff;
-    background-color: #8beebe;
+    background: radial-gradient(#8efb86, #dcffee);
+    background: -moz-radial-gradient(#8efb86, #dcffee);
+    background: -webkit-radial-gradient(#8efb86, #dcffee);
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
@@ -207,15 +211,14 @@ img {
 
 .footer-site-menu {
     display: flex;
-    color: #000000;
+    color: #1e1e1e;
     line-height: 2.0;
-    -webkit-text-stroke: 1px #ffffff;
     font-family: "RocknRoll One", sans-serif;
     text-shadow:
-        1px 1px 1px #000, -1px -1px 1px #000,
-        -1px 1px 1px #000,  1px -1px 1px #000;
+        1px 1px 1px #ffffff, -1px -1px 1px #ffffff,
+        -1px 1px 1px #ffffff,  1px -1px 1px #ffffff;
     font-size: 25px;
-    font-weight: 20;
+    font-weight: 10;
     font-style: normal;
 }
 
@@ -223,4 +226,7 @@ img {
     font-size: 14pt;
     font-weight: bold;
     margin-top: 50px;
+    text-shadow:
+        1px 1px 1px #ffffff, -1px -1px 1px #ffffff,
+        -1px 1px 1px #ffffff,  1px -1px 1px #ffffff;
 }
