@@ -1,5 +1,78 @@
 @charset "utf-8";
 
+.title {
+    height: 310px;
+    background-image: url(../images/index/bg_main_white.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+nav.floating {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-color: #d0d0d0;
+}
+
+.first-view {
+    height: calc(100vh + 400px);
+    background-image: url(../images/index/bg_main.png);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    padding-bottom: 450px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.first-view-text h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.first-view-text p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.lead {
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
 *,
 ::before,
 ::after {
@@ -29,9 +102,14 @@ img {
     max-width: 100%;
 }
 
+.header {
+    width: 100%;
+    /*position: fixed;*/
+}
+
 .header-inner {
-    max-width: 1200px;
-    height: 110px;
+    max-width: 1920;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
@@ -39,6 +117,11 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #dcffee;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
 }
 
 .toggle-menu-button {
@@ -47,7 +130,7 @@ img {
 
 .header-logo {
     display: block;
-    width: 170px;
+    width: 120px;
 }
 
 .site-menu ul {
@@ -60,10 +143,27 @@ img {
 }
 
 .site-menu ul li a {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media (max-width: 800px) {
+
+    .first-view-text {
+        margin-top: 70px;
+        padding-bottom: 360px;
+    }
+
+    .first-view-text h1 {
+        font-size: 30px;
+    }
+
+    .first-view-text p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
     .site-menu ul {
         display: block;
         text-align: center;
@@ -87,7 +187,7 @@ img {
     .header-inner {
         padding-left: 20px;
         padding-right: 20px;
-        height: 100%;
+        height: 130%;
         position: relative;
     }
 
@@ -101,10 +201,13 @@ img {
         left: 0;
         right: 0;
         color: #ffffff;
-        background-color: #736e62;
-        padding-top: 30px;
-        padding-bottom: 50px;
+        background-color: #cec6b6;
+        padding-top: 10px;
+        padding-bottom: 35px;
         display: none;
+        text-shadow:
+        1px 1px 1px #000000, -1px -1px 1px #000000,
+        -1px 1px 1px #000000,  1px -1px 1px #000000;
     }
 
     .header-site-menu.is-show {
@@ -129,18 +232,15 @@ img {
         outline: none;
     }
 
-    .footer-logo {
-        margin-top: 60px;
-    }
-
     .copyright {
         margin-top: 50px;
     }
 }
 
 .footer {
-    color: #ffffff;
-    background-color: #24211b;
+    background: radial-gradient(#8efb86, #dcffee);
+    background: -moz-radial-gradient(#8efb86, #dcffee);
+    background: -webkit-radial-gradient(#8efb86, #dcffee);
     padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
@@ -148,14 +248,24 @@ img {
     align-items: center;
 }
 
-.footer-logo {
-    display: block;
-    width: 235px;
-    margin-top: 90px;
+.footer-site-menu {
+    display: flex;
+    color: #1e1e1e;
+    line-height: 2.0;
+    font-family: "RocknRoll One", sans-serif;
+    text-shadow:
+        1px 1px 1px #ffffff, -1px -1px 1px #ffffff,
+        -1px 1px 1px #ffffff,  1px -1px 1px #ffffff;
+    font-size: 25px;
+    font-weight: 10;
+    font-style: normal;
 }
 
 .copyright {
     font-size: 14pt;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 50px;
+    text-shadow:
+        1px 1px 1px #ffffff, -1px -1px 1px #ffffff,
+        -1px 1px 1px #ffffff,  1px -1px 1px #ffffff;
 }
