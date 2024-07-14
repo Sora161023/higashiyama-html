@@ -1,7 +1,6 @@
 .fee {
     font-family: Arial, sans-serif;
-    margin: 20px;
-
+    margin: 40px;
 }
 
 .fee h2 {
@@ -28,4 +27,28 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-.business-hour
+.business-hour-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.business-hour-text h3 {
+    margin-top: 15px;
+    font-size: 60px;
+    color: rgb(108, 245, 168);
+    text-shadow:
+    1px 1px 1px #000000, -1px -1px 1px #000000,
+    -1px 1px 1px #000000,  1px -1px 1px #000000;
+}
+
+.business-hour-text h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.red-text {
+    color: red;
+    font-size: 24px;
+}
