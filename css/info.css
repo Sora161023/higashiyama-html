@@ -1,9 +1,9 @@
-body {
+.fee {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-h1 {
+.fee h2 {
     text-align: center;
 }
 
@@ -25,10 +25,4 @@ th {
 
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-p {
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
 }
