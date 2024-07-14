@@ -99,6 +99,12 @@ img {
     
 }
 
+.header h2 {
+    text-shadow:
+    1px 1px 1px #ffffff, -1px -1px 1px #ffffff,
+    -1px 1px 1px #ffffff,  1px -1px 1px #ffffff;
+}
+
 .toggle-menu-button {
     display: none;
 }
